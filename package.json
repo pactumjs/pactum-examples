@@ -1,0 +1,25 @@
+{
+  "name": "pactum-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:api-challenges": "mocha api-challenges --timeout 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pactumjs/pactum-examples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pactumjs/pactum-examples/issues"
+  },
+  "homepage": "https://github.com/pactumjs/pactum-examples#readme",
+  "dependencies": {
+    "mocha": "^9.0.1",
+    "pactum": "^3.0.17"
+  },
+  "devDependencies": {}
+}
