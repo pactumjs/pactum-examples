@@ -9,9 +9,14 @@
     "test:pd:request-making": "mocha pactum-demo/request-making",
     "test:pd:response-validation": "mocha pactum-demo/response-validation",
     "start:pd:mock-server": "node pactum-demo/mock-server/mock.js",
-    "start:pd:ct:is": "node pactum-demo/component-testing/inventory-service.js",
-    "start:pd:ct:os": "node pactum-demo/component-testing/order-service.js",
-    "test:pd:ct": "mocha pactum-demo/component-testing/tests"
+    "start:pd:comp:is": "node pactum-demo/component-testing/inventory-service.js",
+    "start:pd:comp:os": "node pactum-demo/component-testing/order-service.js",
+    "test:pd:comp": "mocha pactum-demo/component-testing/tests",
+    "start:pd:cont:fs": "docker-compose -f pactum-demo/contract-testing/docker-compose.yml up",
+    "start:pd:cont:is": "node pactum-demo/contract-testing/inventory-service/inventory-service.js",
+    "test:pd:cont:is": "mocha pactum-demo/contract-testing/inventory-service/tests",
+    "start:pd:cont:os": "node pactum-demo/contract-testing/order-service/order-service.js",
+    "test:pd:cont:os": "mocha pactum-demo/contract-testing/order-service/tests"
   },
   "repository": {
     "type": "git",
@@ -26,7 +31,8 @@
   "homepage": "https://github.com/pactumjs/pactum-examples#readme",
   "dependencies": {
     "mocha": "^9.0.1",
-    "pactum": "^3.0.17"
+    "pactum": "^3.0.17",
+    "pactum-flow-plugin": "0.0.4"
   },
   "devDependencies": {}
 }
