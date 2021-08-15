@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:api-challenges": "mocha api-challenges --timeout 5000"
+    "test:api-challenges": "mocha api-challenges --timeout 5000",
+    "test:pd:intro": "mocha pactum-demo/intro",
+    "test:pd:request-making": "mocha pactum-demo/request-making",
+    "test:pd:response-validation": "mocha pactum-demo/response-validation",
+    "start:pd:mock-server": "node pactum-demo/mock-server/mock.js",
+    "start:pd:ct:is": "node pactum-demo/component-testing/inventory-service.js",
+    "start:pd:ct:os": "node pactum-demo/component-testing/order-service.js",
+    "test:pd:ct": "mocha pactum-demo/component-testing/tests"
   },
   "repository": {
     "type": "git",
