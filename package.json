@@ -31,7 +31,7 @@
   "homepage": "https://github.com/pactumjs/pactum-examples#readme",
   "dependencies": {
     "mocha": "^9.0.1",
-    "pactum": "^3.0.17",
+    "pactum": "^3.1.0",
     "pactum-flow-plugin": "0.0.4"
   },
   "devDependencies": {}

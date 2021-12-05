@@ -1,0 +1,8 @@
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./coverage:/app/coverage"

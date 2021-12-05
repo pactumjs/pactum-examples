@@ -18,6 +18,10 @@ Run Tests
 npm run test:api-challenges
 ```
 
+## Code Coverage - NodeJS
+
+Example setup to get code coverage of a NodeJS server. Get started by reading the `README.md` inside `code-coverage-nodejs` folder.
+
 ## Pactum Demo
 
 Demo code used in - https://pactumjs.github.io/pactum-slides
