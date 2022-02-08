@@ -1,7 +1,7 @@
-const pactum = require('pactum');
+const { spec } = require('pactum');
 
 it('should be a teapot', async () => {
-  await pactum.spec()
+  await spec()
     .get('http://httpbin.org/status/418')
     .expectStatus(418);
 });
