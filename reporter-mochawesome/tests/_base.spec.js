@@ -1,4 +1,4 @@
-const { reporter } = require('pactum');
+const { request, reporter } = require('pactum');
 const addContext = require('mochawesome/addContext');
 
 const awesome_reporter = {
@@ -16,5 +16,6 @@ const awesome_reporter = {
 }
 
 before(function () {
+  request.setBaseUrl('https://reqres.in');
   reporter.add(awesome_reporter);
 });

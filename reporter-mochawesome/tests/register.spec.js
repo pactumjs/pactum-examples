@@ -11,7 +11,7 @@ describe('Register Users', function () {
 
   it('register a user', async function () {
     await _spec
-      .post('https://reqres.in/api/register')
+      .post('/api/register')
       .withJson({
         "email": "eve.holt@reqres.in",
         "password": "pistol"

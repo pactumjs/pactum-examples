@@ -11,13 +11,13 @@ describe('Fetch Users', function () {
 
   it('get user 1', async function () {
     await _spec
-      .get('https://reqres.in/api/users/1')
+      .get('/api/users/1')
       .expectStatus(200);
   });
 
   it('get user 2', async function () {
     await _spec
-      .get('https://reqres.in/api/users/2')
+      .get('/api/users/2')
       .expectStatus(200);
   });
 
@@ -35,7 +35,7 @@ describe('Create Users', function () {
 
   it('post a user', async function () {
     await _spec
-      .post('https://reqres.in/api/users/1')
+      .post('/api/users/1')
       .withJson({
         "name": "morpheus",
         "job": "leader"
