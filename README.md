@@ -37,3 +37,7 @@ npm run test:pd:intro
 # running mock server
 npm run start:pd:mock-server
 ```
+
+## Integration PactumJS with mochawesome reporter
+
+Get started by reading the `README.md` inside `reporter-mochawesome` folder.
