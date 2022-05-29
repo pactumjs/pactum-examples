@@ -1,0 +1,16 @@
+{
+  "name": "api-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "base.spec.js",
+  "scripts": {
+    "test": "mocha tests --timeout 5000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.0.0",
+    "pactum": "^3.1.9"
+  }
+}

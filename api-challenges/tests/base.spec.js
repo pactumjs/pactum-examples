@@ -1,5 +1,4 @@
-const pactum = require('pactum');
-const { request } = pactum;
+const { spec, request } = require('pactum');
 
 before(async () => {
   await setRequestDefaults();
@@ -14,14 +13,14 @@ async function setRequestDefaults() {
 }
 
 async function getChallengerId() {
-  return await pactum.spec()
+  return await spec()
     .post('/challenger')
     .expectStatus(201)
     .returns('res.headers.x-challenger');
 }
 
 async function addDummyTodos() {
-  await pactum.spec()
+  await spec()
     .post('/todos')
     .withJson({
       "title": "process payroll",
@@ -29,7 +28,7 @@ async function addDummyTodos() {
       "description": ""
     })
     .expectStatus(201);
-  await pactum.spec()
+  await spec()
     .post('/todos')
     .withJson({
       "title": "train staff",
