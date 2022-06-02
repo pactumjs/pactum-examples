@@ -1,0 +1,19 @@
+{
+  "name": "code-coverage-spring-java",
+  "version": "1.0.0",
+  "description": "This example code will demonstrate on how to generate code coverage from PactumJS tests on a Spring server written in java.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.0.0",
+    "pactum": "^3.1.9"
+  }
+}
