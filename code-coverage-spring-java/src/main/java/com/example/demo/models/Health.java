@@ -1,4 +1,4 @@
-package com.examples.demo.models;
+package com.example.demo.models;
 
 public class Health {
 
