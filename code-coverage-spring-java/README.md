@@ -11,12 +11,6 @@ Install the following softwares
 - Java 11
 - Maven
 
-Create jar file.
-
-```shell
-mvn package
-```
-
 ### Testing
 
 Install Dependencies for running tests

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "package jar"
+mvn package
+
 echo "build app"
 docker compose up -d
 
