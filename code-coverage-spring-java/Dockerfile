@@ -13,5 +13,6 @@ RUN mvn -f /home/app/pom.xml clean package
 FROM adoptopenjdk/openjdk11:latest
 COPY --from=build /home/app/src/main/resources/config /usr/local/lib/config
 COPY --from=build /home/app/target/npm-pricing.jar /usr/local/lib/demo.jar
-EXPOSE 7777
-ENTRYPOINT ["java","-Xmx600m","-jar","/usr/local/lib/demo.jar"]
+COPY --from=build /home/app/target target
+COPY coverage.sh .
+ENTRYPOINT ["bash", "coverage.sh"]
