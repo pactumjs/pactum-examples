@@ -4,6 +4,15 @@ This example code will demonstrate on how to generate code coverage from PactumJ
 
 ## Get Started
 
+### Development
+
+Install the following softwares
+
+- Java 11
+- Maven
+
+### Testing
+
 Install Dependencies for running tests
 
 ```shell
@@ -13,5 +22,5 @@ npm i
 Runs the server, runs the tests and dumps the coverage.
 
 ```shell
-bash coverage.sh
+bash run.sh
 ```
