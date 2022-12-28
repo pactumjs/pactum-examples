@@ -11,4 +11,5 @@ Navigate to each folder to get started.
 - [Code Coverage - NodeJS](/code-coverage-nodejs/)
 - [Code Coverage - Spring - Java](/code-coverage-spring-java/)
 - [Data Management](/data-management/)
+- [Reporter - Allure](/reporter-allure/)
 - [Reporter - MochaAwesome](/reporter-mochawesome/)
