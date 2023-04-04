@@ -1,0 +1,29 @@
+{
+	"name": "typescript-pactumjs-demo",
+	"version": "1.0.0",
+	"description": "PactumJS Boilerplate project that uses TypeScript",
+	"main": "index.js",
+	"scripts": {
+		"ts-check": "npx tsc --noEmit",
+		"prettier:check": "npx prettier --check .",
+		"prettier:fix": "npx prettier --write .",
+		"test": "npx ts-mocha tests/*.test.ts  --reporter spec --reporter mochawesome --reporter-options reportDir=results --timeout=10000"
+	},
+	"author": "Razvan Vancea",
+	"license": "ISC",
+	"devDependencies": {
+		"@faker-js/faker": "^7.6.0",
+		"@types/chai": "^4.3.4",
+		"@types/mocha": "^10.0.1",
+		"@types/node": "^18.15.11",
+		"chai": "^4.3.7",
+		"dotenv": "^16.0.3",
+		"eslint": "^8.37.0",
+		"mochawesome": "^7.1.3",
+		"npx": "^10.2.2",
+		"pactum": "^3.3.3",
+		"prettier": "^2.8.7",
+		"ts-mocha": "^10.0.0",
+		"typescript": "^5.0.3"
+	}
+}
