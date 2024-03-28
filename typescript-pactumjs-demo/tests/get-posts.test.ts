@@ -1,6 +1,8 @@
 require('dotenv').config();
 import { spec, request } from 'pactum';
 
+const baseUrl = "https://jsonplaceholder.typicode.com";
+
 describe('GET All Posts Feature', () => {
 	before(async () => {
 		request.setDefaultTimeout(10000);
@@ -8,7 +10,7 @@ describe('GET All Posts Feature', () => {
 
 	it('should get all posts', async () => {
 		const resp = await spec()
-			.get(`${process.env.BASE_URL}/posts`)
+			.get(`${baseUrl}/posts`)
 			.expectStatus(200);
 	});
 });

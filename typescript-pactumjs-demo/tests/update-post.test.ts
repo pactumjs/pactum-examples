@@ -1,6 +1,9 @@
 require('dotenv').config();
 import { spec, request } from 'pactum';
-import { faker } from '@faker-js/faker';
+import Chance from 'chance';
+const chance = new Chance();
+
+const baseUrl = "https://jsonplaceholder.typicode.com";
 
 interface Post {
 	userId: number;
@@ -15,7 +18,7 @@ describe('Update Posts Feature', () => {
 	});
 
 	it('should be able to update specific post', async () => {
-		const randomString: string = faker.lorem.text();
+		const randomString: string = chance.word({ length: 5 });
 
 		const requestBody: Post = {
 			userId: 1,
@@ -24,7 +27,7 @@ describe('Update Posts Feature', () => {
 			body: randomString,
 		};
 		const resp = await spec()
-			.put(`${process.env.BASE_URL}/posts/1`)
+			.put(`${baseUrl}/posts/1`)
 			.withBody(requestBody)
 			.expectStatus(200);
 	});
