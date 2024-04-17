@@ -7,7 +7,7 @@
 
 [Mochawesome, HTML Reporter](https://www.npmjs.com/package/mochawesome)
 
-[FakerJS, random data generator](https://fakerjs.dev/)
+[ChanceJS, random data generator](https://chancejs.com/)
 
 [DotEnv, dynamic URLs](https://www.npmjs.com/package/dotenv)
 
